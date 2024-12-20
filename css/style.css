@@ -1,4 +1,36 @@
-header 
-[
-    background-color
-]
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.piscando {
+    animation: piscar 1s infinite;
+    color: red;
+    font-size: 24px;
+}
+
+.movimentando {
+    animation: mover 5s linear infinite;
+    color: blue;
+    font-size: 24px;
+}
+
+.imagem-01 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #ccc;
+}
